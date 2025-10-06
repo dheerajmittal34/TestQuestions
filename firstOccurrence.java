@@ -8,11 +8,11 @@ public class firstOccurrence {
 
             if (arr[mid] == key) {
                 result = mid;        
-                left = mid + 1;      
+                right = mid - 1;      
             } else if (arr[mid] < key) {
                 left = mid + 1;
             } else {
-                right = mid + 1;
+                right = mid - 1;
             }
         }
 
